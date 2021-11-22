@@ -1,10 +1,10 @@
 /* eslint-disable prettier/prettier */
 import React from 'react';
 import {users} from 'data/users';
-import UsersLiestItem from 'components/UsersListItem/UsersListItem';
 import styled from 'styled-components';
+import UsersLiestItem from 'components/molecules/UsersListItem/UsersListItem';
 
-export const Wrapper = styled.div`
+const Wrapper = styled.div`
   background-color: white;
   width: 100%;
   max-width: 500px;
@@ -12,6 +12,12 @@ export const Wrapper = styled.div`
   border-radius: 25px;
   box-shadow: 0 5px 15px -10px rgba(0, 0, 0, 0.3);
 `;
+
+// const StyledList = styled.ul`
+// list-style:none;
+// margin: 0;
+// padding 
+// `;
 
 const UsersList = () => (
 <Wrapper>

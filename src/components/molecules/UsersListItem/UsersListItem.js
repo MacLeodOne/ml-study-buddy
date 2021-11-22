@@ -2,9 +2,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
+import Button from 'components/atoms/Button/Button';
 
-
-export const Wrapper = styled.li`
+const Wrapper = styled.li`
   display: flex;
   align-items: center;
   position: relative;
@@ -18,28 +18,16 @@ export const Wrapper = styled.li`
   }
 `;
 
-const StyleButton = styled.button`
-width: 25px;
-height: 25px;
-background-color: ${(props) => (props.isSecondary ? '#e7e044':'#c0c7d6')};
-border-radius:50px;
-border:none;
-color:white;
-
-`;
-
-
 const UsersLiestItem = ({userData: {average,name,attendance = '0%' }}) =>(
 <Wrapper>
 
-                <div>{average}</div>
-                <div>
-                    <p> {name}</p>
-                    <p>{attendance}</p>
-                </div>
-                <StyleButton>X</StyleButton>
-                <StyleButton isSecondary>X</StyleButton>
-            </Wrapper>
+    <div>{average}</div>
+      <div>
+        <p> {name}</p>
+        <p>{attendance}</p>              
+      </div>
+      <Button />
+</Wrapper>
 );
 
 UsersLiestItem.propTypes = {
