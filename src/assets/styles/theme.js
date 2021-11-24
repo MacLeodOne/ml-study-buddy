@@ -12,7 +12,7 @@ export const theme = {
     },
     fontSize: {
         l:'17px',
-        m: '112px',
+        m: '12px',
         s: '11px',
 
     },

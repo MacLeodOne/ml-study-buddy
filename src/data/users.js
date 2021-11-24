@@ -3,7 +3,7 @@ export const users = [
     {
         name: 'Adam Romański',
         attendance: '39%',
-        average: '2.3' 
+        average: '4.0' 
     },
     {
         name: 'Wojciech Jarosik',
@@ -28,6 +28,6 @@ export const users = [
     {
         name: 'Alicja Koszerna',
       
-         average: '3,3',
+         average: '3.3',
     }
 ]
