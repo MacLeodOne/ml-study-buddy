@@ -6,8 +6,8 @@ import { StyledButton } from './Button.styles';
 
 
 
-const Button = () => (
-    <StyledButton>
+const Button = (props) => (
+    <StyledButton {...props}>
 <DeleteIcon />
     </StyledButton>
 );
