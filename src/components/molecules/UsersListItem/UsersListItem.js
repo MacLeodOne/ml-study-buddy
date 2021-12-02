@@ -1,8 +1,9 @@
 /* eslint-disable prettier/prettier */
 import React from 'react';
 import PropTypes from 'prop-types';
-import Button from 'components/atoms/Button/Button';
+import DeleteButton from 'components/atoms/DeleteButton/DeleteButton';
 import { StyledAverage, StyledInfo, Wrapper } from './UsersListItem.styles';
+import { UserShape } from 'types';
 
 const UsersLiestItem = ({deleteUser, userData: {average,name,attendance = '0%' }}) => (
 <Wrapper>
@@ -11,7 +12,7 @@ const UsersLiestItem = ({deleteUser, userData: {average,name,attendance = '0%' }
      
       <p>
         {name}  
-        <Button onClick = {() => deleteUser(name)} />
+        <DeleteButton onClick = {() => deleteUser(name)} />
       </p>
       
       <p>attendance: {attendance}</p>
@@ -20,10 +21,6 @@ const UsersLiestItem = ({deleteUser, userData: {average,name,attendance = '0%' }
 );
 
 UsersLiestItem.propTypes = {
-    userData:PropTypes.shape({
-        average:PropTypes.string.isRequired,
-        name:PropTypes.string.isRequired,
-        attendance:PropTypes.string,
-    }),
+    userData:PropTypes.shape(UserShape),
 };
 export default UsersLiestItem;

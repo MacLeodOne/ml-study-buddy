@@ -1,9 +1,10 @@
 import { createGlobalStyle } from 'styled-components';
-import 'assets/styles/fonts.css';
+import {} from './fonts.css';
 
 export const GlobalStyle = createGlobalStyle`
   html {
-      box-sizing: border-box;
+    box-sizing: border-box;
+     
   }
   
   *, *::after, *::before {
@@ -11,9 +12,7 @@ export const GlobalStyle = createGlobalStyle`
   }
   
   body {
-    font-family: 'Montserrat', sans-serif ;
-
-
+    font-family: 'Montserrat', sans-serif;
   }
   
   a, button {
